@@ -93,16 +93,114 @@ body {
 }
 .table__card {
   display: flex;
+  align-items: center;
   width: 304px;
   height: 78px;
-  border-radius: 4px;
-  background-color: #373352;
-  position: relative;
-  margin-left: -3px;
-  flex-direction: column;
-  margin-bottom: 3px;
-  transition: 0.2s;
 }
+.table__body {
+  display: flex;
+  width: 288px;
+  height: 78px;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #373352;
+  margin-left: -31px;
+  transition: 0.2s;
+  flex-direction: column;
+}
+.table__status {
+  display: flex;
+  transform: rotate(-90deg);
+  width: 78px;
+  height: 16px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 8px;
+  margin-left: -34px;
+  color: white;
+  text-transform: uppercase;
+}
+.status__register {
+  background-color: #00bb40;
+}
+.table__upperpart {
+  display: flex;
+  margin-top: 7px;
+}
+.upperpart__right {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.table__button {
+  display: flex;
+}
+.upperpart__left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.left__tags {
+  display: flex;
+  height: 16px;
+  gap: 4px;
+  margin-left: 7px;
+}
+.pin{
+  background-image: url(/images/pin.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 16px;
+  height: 16px;
+}
+.tags {
+  display: flex;
+  background-position: center;
+  border: 1px solid white;
+  align-items: center;
+  font-size: 8px;
+  font-weight: 600;
+  color: white;
+  opacity: 0.7;
+  border-radius: 2px;
+  padding: 0px 3px 0px 3px;
+}
+.knockout{
+  background-image:url(/images/kick.svg);
+  background-repeat: no-repeat;
+  width: 8px;
+}
+.probounty{
+  background-image:url(/images/probounty.svg);
+  background-repeat: no-repeat;
+  width: 8px;
+}
+.rapid{
+  background-image:url(/images/rapid.svg);
+  background-repeat: no-repeat;
+  width: 8px;
+}
+.left__name {
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+.table__lowerpart {
+  display: flex;
+  font-weight: 500;
+  font-size: 10px;
+  color: white;
+  opacity: 0.7;
+}
+
+
+
+
+
 
 .closed__button {
   margin-top: 45px;
