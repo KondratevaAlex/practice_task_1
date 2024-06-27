@@ -96,6 +96,7 @@ body {
   align-items: center;
   width: 304px;
   height: 78px;
+  margin-bottom: 4px;
 }
 .table__body {
   display: flex;
@@ -106,6 +107,7 @@ body {
   margin-left: -31px;
   transition: 0.2s;
   flex-direction: column;
+  position: relative;
 }
 .table__status {
   display: flex;
@@ -125,29 +127,49 @@ body {
 .status__register {
   background-color: #00bb40;
 }
+.status__cancelled{
+  background-color: #5E5A79;
+}
 .table__upperpart {
   display: flex;
-  margin-top: 7px;
+  margin-top: 8px;
+  position: relative;
+  margin-left: 8px;
 }
 .upperpart__right {
   display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  right: 8px;
 }
 .table__button {
   display: flex;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 8px 12px 8px;
+  align-items: center;
+  transition: 0.2s;
+}
+.join{
+  background-color: #00BB40;
+}
+.cancelled{
+  background-color: rgb(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255, 0.3);
 }
 .upperpart__left {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 11px;
+  position: relative;
 }
 .left__tags {
   display: flex;
   height: 16px;
   gap: 4px;
-  margin-left: 7px;
 }
 .pin{
   background-image: url(/images/pin.svg);
@@ -167,6 +189,7 @@ body {
   opacity: 0.7;
   border-radius: 2px;
   padding: 0px 3px 0px 3px;
+  text-transform: uppercase;
 }
 .knockout{
   background-image:url(/images/kick.svg);
@@ -190,14 +213,36 @@ body {
   color: white;
 }
 .table__lowerpart {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+.lowerpart {
   font-weight: 500;
   font-size: 10px;
   color: white;
   opacity: 0.7;
+  padding-left: 15px;
+  padding-right: 8px;
+  display: flex;
 }
-
-
+.date {
+  background-image: url(/images/time.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.players{
+  background-image: url(/images/players.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.tourneys{
+  background-image: url(/images/tourney.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
 
 
 
@@ -216,18 +261,20 @@ body {
     background-color: #0e8938;
   }
 }
-.table__join:hover {
-  background-color: #43ce72;
+.join:hover{
+  background-color: #43CE72;
 }
-.table__join:active {
-  background-color: #0e8938;
+.join:active{
+  background-color: #0E8938;
 }
-.table__card:hover {
-  background-color: #423d62;
+.table__body:hover{
+  background-color: #423D62;
 }
-.table__card:active {
-  background-color: #2f2b47;
+.table__body:active{
+  background-color: #2F2B47;
 }
+
+
 
 .balance__close:hover {
   background-color: #43ce72;
