@@ -60,6 +60,12 @@ body {
   margin-top: -2px;
   margin-left: -2px;
   color: #fff;
+  background-color: #373352;
+  border-radius: 24px;
+  padding-right: 8px;
+  height: 26px;
+  padding-left: 31px;
+  position: relative;
 }
 .balance__button {
   background-color: #00bb40;
@@ -69,7 +75,8 @@ body {
   margin: 0 auto;
   height: 26px;
   position: absolute;
-  transition: 0.2s;
+  transition: 0.1s;
+  left: 0px;
 }
 .balance__show {
   background-image: url(/images/unvisible.svg);
@@ -88,11 +95,12 @@ body {
   padding-left: 23px;
 }
 .balance__amount {
-  background-color: #373352;
-  padding: 6px 8px 6px 41px;
-  border-radius: 24px;
+  /* background-color: #373352; */
+  /* padding: 6px 8px 6px 32px; */
+  /* border-radius: 24px; */
   font-weight: 400;
   font-size: 12px;
+  margin-left: 8px;
 }
 .table__card {
   display: flex;
@@ -107,7 +115,7 @@ body {
   height: 78px;
   border-radius: 0px 4px 4px 0px;
   background-color: #373352;
-  transition: 0.2s;
+  transition: 0.1s;
   flex-direction: column;
   padding: 8px;
   box-sizing: border-box;
@@ -155,7 +163,7 @@ body {
   text-transform: uppercase;
   padding: 12px 8px 12px 8px;
   align-items: center;
-  transition: 0.2s;
+  transition: 0.1s;
   cursor: pointer;
 }
 .join {
